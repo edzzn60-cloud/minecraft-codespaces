@@ -1,0 +1,12 @@
+{
+  "name": "Minecraft Desktop",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "Desktop noVNC",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "bash scripts/setup-desktop.sh"
+}
