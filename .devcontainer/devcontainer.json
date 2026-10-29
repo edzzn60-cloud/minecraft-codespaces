@@ -1,3 +1,4 @@
+
 {
   "name": "Minecraft Desktop",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
@@ -8,5 +9,11 @@
       "onAutoForward": "openBrowser"
     }
   },
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
+  },
   "postCreateCommand": "bash scripts/setup-desktop.sh"
 }
+
